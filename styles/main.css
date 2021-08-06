@@ -61,6 +61,10 @@ section h2{
 .banner{
     position: relative;
 }
+
+.banner figure img{
+    max-width: 100%;
+}
 .banner h1,
 .banner h2{
     position: absolute;
