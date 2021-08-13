@@ -1,0 +1,40 @@
+
+//Globales
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: $hmtl-font-size-rem; //base 10-- ose x10
+  }
+  
+  body {
+    font-family: $body-font-family;
+    font-weight: $body-font-weight;
+    font-size: $body-font-size; //Multiplicado por 10
+    color: $body-color;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  img {
+    display: block;
+  }
+  
+  section h2 {
+    margin-bottom: $h2-margin-bottom-section1;
+    font-size: $h2-size-section1;
+    text-align: center;
+  }
+  
+  @media (min-width: 0) and (max-width: 980px) {
+
+    /*Globales*/
+    section h2 {
+      font-size: $h2-size-section1r;
+      margin-bottom: $h2-margin-bottom-section1r;
+    }
+  }

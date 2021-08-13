@@ -1,0 +1,42 @@
+/*Services*/
+.services {
+  padding: 30px 182px 76px;
+  background: $services-background;
+
+  .row {
+    margin-bottom: 54px;
+    .item {
+      width: 33.33%;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .item {
+    h3 {
+      text-align: center;
+    }
+    img {
+      margin: 0 auto 15px;
+    }
+  }
+}
+
+@media (min-width: 0) and (max-width: 980px) {
+  .services {
+    padding: 20px 15px 40px;
+
+    .row {
+      margin-bottom: 0;
+    }
+
+    .row .item {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .item h3 {
+      text-align: center;
+    }
+  }
+}

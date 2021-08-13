@@ -1,0 +1,57 @@
+/*Banner*/
+.banner {
+  position: relative;
+  h1,
+  h2 {
+    position: absolute;
+  }
+  h1 {
+    top: 45px;
+    width: 100%;
+    font-size: $h1-size;
+    text-align: center;
+  }
+  h2 {
+    left: 50px;
+    bottom: 129px;
+    padding: 16px;
+    max-width: 360px;
+    font-size: $h2-size-section1;
+    text-align: left;
+    line-height: 1.2;
+    background: rgba(114, 153, 254, 0.5);
+    &:hover {
+      transform: rotate(10turn);
+    }
+    figure img {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (min-width: 0) and (max-width: 980px) {
+  .banner {
+    h1 {
+      top: 10px;
+      left: 10px;
+      font-size:$h1-sizer;
+      text-align: left;
+    }
+
+    h2 {
+      left: 20px;
+      right: 20px;
+      bottom: 5px;
+      padding: 16px;
+      max-width: 100%;
+      text-align: center;
+      line-height: 1;
+      }
+
+    figure img {
+      height: 434px;
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+}

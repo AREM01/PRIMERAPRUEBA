@@ -1,0 +1,41 @@
+.portfolio {
+  padding: 42px 160px 94px;
+  background: $portfolio-background;
+
+  &:last-child figure {
+    margin-bottom: 0;
+  }
+
+  figure {
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    img:hover {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+      border: solid 1px purple;
+    }
+  }
+   
+  .row {
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 0) and (max-width: 980px) {
+  .portfolio {
+    padding: 42px 80px 34px;
+
+    figure:last-child {
+      margin-right: 10px;
+    }
+
+    .row:last-child figure {
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+/*Skills*/
+
+.skills {
+  padding: 28px 104px 86px;
+  background: $skill-section-background;
+  h3 {
+    margin-bottom: 8px;
+  }
+
+  .bar {
+    height: 18px;
+    background: $skill-bar-background;
+    border-radius: 8px;
+  }
+
+  .bar div {
+    border-radius: 8px;
+    height: 100%;
+    background: $skill-bar-div-background;
+  }
+  .row {
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .item {
+    width: 50%;
+    &:first-child {
+      padding-right: 10px;
+    }
+
+    &:last-child {
+      padding-left: 10px;
+    }
+  }
+} //ciere
+
+@media (min-width: 0) and (max-width: 980px) {
+  .skills {
+    padding: 20px 15px 40px;
+
+    .item {
+      width: 100%;
+    }
+
+    .item:first-child {
+      margin-bottom: 20px;
+    }
+
+    .item:last-child {
+      padding: 0;
+    }
+  }
+}
